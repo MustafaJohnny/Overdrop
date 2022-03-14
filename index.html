@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Overdrop - Best weather App</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="#FFF7ED"
+            viewBox="0 0 256 256"
+            class="icon"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M128,24S48,72,48,144a79.98371,79.98371,0,0,0,77.94141,79.948A40.00143,40.00143,0,0,1,88,184c0-40,40-64,40-64s40,24,40,64a40.00143,40.00143,0,0,1-37.94141,39.948A79.98337,79.98337,0,0,0,208,144C208,72,128,24,128,24Z"
+              opacity="0.2"
+            ></path>
+            <path
+              d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z"
+              fill="none"
+              stroke="#FED7AA"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+            <path
+              d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z"
+              fill="none"
+              stroke="#FFEDD5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+          </svg>
+          <span class="logo-text">OVERDROP</span>
+        </div>
+        <button class="get">Get Premium!</button>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>An easy way to check weather temperature Every single day</h1>
+          <div class="text-inner">
+            <p class="text">
+              Overdrop is one of the newer weather apps on the store
+              comparatively. It features a sleek design and you can search by
+              city in any language you want
+            </p>
+          </div>
+          <a href="#" class="btn using"> Start Using App </a>
+        </div>
+      </div>
+
+      <div class="app">
+        <form class="main-form hidden" id="form">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search By City"
+            autocomplete="off"
+          />
+
+          <button class="get search">Search</button>
+        </form>
+        <main id="main"></main>
+
+        <div class="spinner">
+          <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>Designed © 2022 By Mustafa Johnny</footer>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
