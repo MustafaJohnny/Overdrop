@@ -19,7 +19,10 @@ const getWeatherInfo = async function (city) {
     );
 
     // If the there is something wrong with the recived data we throw a manual error.
-    if (!respon.ok) throw new Error("City Name Is Not Correct");
+    if (!respon.ok)
+      throw new Error(
+        "Please Enter A Valid City Name Again In Any Language You Prefer!"
+      );
 
     const result = await respon.json();
 
@@ -28,7 +31,7 @@ const getWeatherInfo = async function (city) {
 
     // Simple error handling using the try/catch method.
   } catch (theError) {
-    console.error(`💔${theError}💔`);
+    alert(theError);
   }
 };
 
@@ -53,6 +56,9 @@ const showWeatherOnThePage = function (data) {
 btnUsing.addEventListener("click", function (e) {
   e.preventDefault();
 
+  // Hide the start using app button.
+  btnUsing.classList.add("hidden");
+
   // Hide any result from the UI
   main.classList.add("hidden");
 
@@ -75,16 +81,19 @@ btnUsing.addEventListener("click", function (e) {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  // If the user submit without a value we return.
+  if (search.value.trim() === "") return;
+
   // We show the result to the user.
   main.classList.remove("hidden");
+
+  // Unhide the start using app button.
+  btnUsing.classList.remove("hidden");
 
   // We hide our form input from the user.
   form.classList.add("hidden");
 
-  // If the user submit without a value we return.
-  if (search.value.trim() === "") return;
-
-  // We add a really nice spinner.
+  // We add a really nice spinner!
   spinner.classList.add("show-spinner");
 
   setTimeout(() => {

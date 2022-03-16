@@ -83,6 +83,9 @@
             id="search"
             placeholder="Search By City"
             autocomplete="off"
+            required
+            oninvalid="this.setCustomValidity('Enter a city name here')"
+            oninput="this.setCustomValidity('')"
           />
 
           <button class="get search">Search</button>
