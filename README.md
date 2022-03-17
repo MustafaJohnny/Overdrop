@@ -5,7 +5,7 @@ Overdrop is an amazing JavaScript Application. This App will allow users to exac
 
 ## Links
 
-- Live Site URL: mustafajohnny.github.io/overdrop/
+- Live Site URL: https://mustafajohnny.github.io/Overdrop/
 
 
 ## Built with
