@@ -1,4 +1,4 @@
-# Overdrop - JavaScript Project
+# Overdrop - JavaScript Practical Project
 
 ## Overview
 
